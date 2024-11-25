@@ -1,0 +1,349 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #596c4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #264653;
+}
+
+.hero {
+    background-image: url('imagenes/2.png'); /* Cambia 'home-bg.png' al nombre que elijas */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+
+.hero-content {
+    background-color: rgba(11, 1, 1, 0.9); 
+    padding: 20px; 
+    border: 2px solid #596c4a; 
+    border-radius: 10px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #e76f51;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #264653;
+}
+
+
+.about-section {
+    background-color: #f1f1f1;
+    padding: 50px 30px; 
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color:#596c4a;
+    margin-bottom: 20px;
+}
+
+
+.products-section {
+    padding: 50px 30px; 
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 2em;
+    color: #596c4a;
+    margin-bottom: 20px;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+.btn-buy {
+    display: inline-block;
+    background-color: #596c4a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #264653;
+}
+
+
+.testimonials-section {
+    padding: 50px 30px; 
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2em;
+    color: #596c4a;
+    margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+    font-size: 1.2em;
+    color: #555;
+    margin: 20px 0;
+    border-left: 5px solid #596c4a;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+
+.contact-section {
+    padding: 50px 30px; 
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact-section button {
+    background-color: #596c4a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+}
+
+.hero {
+    background-image: url(imagenes/image.png);
+    background-size: cover; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: white; 
+}
+footer {
+    background-color: #596c4a;
+    color: #fefefeeb;
+    border-top: 3px solid #596c4a;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+#Blog-Matero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Blog-Matero h2 {
+    color:#596c4a;    
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#Blog-Matero h3 {
+    color: #e76f51;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#Blog-Matero h4 {
+    font-size: 1.2em;
+    color: #596c4a;
+    margin-bottom: 15px;
+}
+
+/* Estilo del Bloque de Texto */
+#Blog-Matero blockquote {
+    background-color: #f1f1f1;
+    border-left: 5px solid #596c4a;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Estilo de las Secciones Yerba Orgánica y Yerba Común */
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.section p {
+    color: #555;
+}
+
+
+.pros-cons {
+    margin-top: 20px;
+}
+
+.pros, .cons {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pros li::before {
+    content: "✔️ ";
+    color: #596c4a;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  
+  .popup {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    background: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
